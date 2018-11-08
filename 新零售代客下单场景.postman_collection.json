@@ -1,0 +1,396 @@
+{
+	"info": {
+		"_postman_id": "b941b5ef-d89c-4546-becd-cc9ef7258e69",
+		"name": "新零售代客下单场景",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "代客下单",
+			"item": [
+				{
+					"name": "登陆",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json, text/javascript, */*; q=0.01",
+								"type": "text"
+							},
+							{
+								"key": "Origin",
+								"value": "https://{{login_url}}",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							},
+							{
+								"key": "Referer",
+								"value": "https://{{login_url}}/",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "gzip, deflate, br",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7",
+								"type": "text"
+							},
+							{
+								"key": "Cookie",
+								"value": "OFCaptchaControl=OFCaptchaControldffe0f62-59c3-4fde-9730-4e9a06185ecf; _ga=GA1.2.389310675.1540777711; _gid=GA1.2.337391646.1540777711; UM_distinctid=166bd82411d477-0fb03b8ea35908-1e3c6656-13c680-166bd82411e21; SSOTICKET=; SSOCHILDTICKET=; SSOEXPIRES=; SSOTHRESHOLD=; qmuid=-1134261340; cxuid=1888801; sxuid=1055450233; gauserid=qm50358agi; _gat=1; a9a68f4fefd3b693f10be4a89799dc48=3b804d90d8504a47863fe84a145fe1ca; PHPSESSID=EF5A0523F0F8C191B92A3898694226DF",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "al",
+									"value": "false",
+									"type": "text"
+								},
+								{
+									"key": "c",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "e",
+									"value": "G2G0eyb8JH",
+									"type": "text"
+								},
+								{
+									"key": "p",
+									"value": "09dd138443e6fe236749658dfb06847e2f47c6c9e412347294ddddc63e69cd8dXcQk8P",
+									"type": "text"
+								},
+								{
+									"key": "su",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "u",
+									"value": "18752005607D3FCX",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://{{login_url}}/login.php?0.9375982132021794",
+							"protocol": "https",
+							"host": [
+								"{{login_url}}"
+							],
+							"path": [
+								"login.php"
+							],
+							"query": [
+								{
+									"key": "0.9375982132021794",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "选择会员",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "reqId",
+								"value": "a44b1c60-dbf0-11e8-b220-1de39a102368",
+								"type": "text"
+							},
+							{
+								"key": "Origin",
+								"value": "https://app.1000.com",
+								"type": "text"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36",
+								"type": "text"
+							},
+							{
+								"key": "systemId",
+								"value": "0032",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Platform",
+								"value": "pc",
+								"type": "text"
+							},
+							{
+								"key": "Referer",
+								"value": "https://app.1000.com/",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "gzip, deflate, br",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7",
+								"type": "text"
+							},
+							{
+								"key": "Cookie",
+								"value": "_ga=GA1.2.389310675.1540777711; _gid=GA1.2.337391646.1540777711; UM_distinctid=166bd82411d477-0fb03b8ea35908-1e3c6656-13c680-166bd82411e21; SSOTICKET=; SSOEXPIRES=; SSOTHRESHOLD=; qmuid=-346390860; cxuid=1875607; gauserid=qm14058sez; a9a68f4fefd3b693f10be4a89799dc48=9bdf78ca58e14350b92d31c911e008ae; sxuid=336954706; _gat=1",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"pageSize\":12,\"pageNum\":0,\"q\":\"13701453844\"}"
+						},
+						"url": {
+							"raw": "https://d2c-api.1000.com/proxyOrder/users",
+							"protocol": "https",
+							"host": [
+								"d2c-api",
+								"1000",
+								"com"
+							],
+							"path": [
+								"proxyOrder",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "选择商品",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Origin",
+								"value": "https://app.1000.com",
+								"type": "text"
+							},
+							{
+								"key": "x-uid",
+								"value": "2616606",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJSMjEwMzU1MTQ4NTMwNzMiLCJpYXQiOjE1NDA4Njg1MTcsImRpZCI6IkEyNjE2NjA2IiwiZXhwIjoxNTQzNDYwNTE3fQ._qNS7hwCacC-SEDEcwurY4EFKQsuekxzY7OEVsKEiWA",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36",
+								"type": "text"
+							},
+							{
+								"key": "adminId",
+								"value": "A2616606",
+								"type": "text"
+							},
+							{
+								"key": "x-client-type",
+								"value": "a",
+								"type": "text"
+							},
+							{
+								"key": "x-href",
+								"value": "https://app.1000.com/#/d2c/order/start",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "*/*",
+								"type": "text"
+							},
+							{
+								"key": "Referer",
+								"value": "https://app.1000.com/",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "gzip, deflate, br",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"skuList\":[{\"skuId\":\"g17268648\",\"count\":1}]}"
+						},
+						"url": {
+							"raw": "https://apid2c.qianmi.com/trade/cartConfirmCheck",
+							"protocol": "https",
+							"host": [
+								"apid2c",
+								"qianmi",
+								"com"
+							],
+							"path": [
+								"trade",
+								"cartConfirmCheck"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "提交订单",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "7eee63ff-34f9-4140-8507-e11e3f631968",
+								"exec": [
+									"//校验response返回200",
+									"tests[\"Status code is 200\"] = responseCode.code === 200;",
+									"",
+									"pm.test(\"Body matches string\", function () {",
+									"    pm.expect(pm.response.text()).to.include(\"操作成功\");",
+									"});",
+									"//获取response里面的tid",
+									"//获取response的body中生成的订单号，如果不是数组的话可直接取",
+									"",
+									" var onlineTradeNo = JSON.parse(responseBody);",
+									" //console.log(\"onlineTradeNo\",onlineTradeNo.data[0].tid);",
+									" console.log(\"onlineTradeNo\", onlineTradeNo.data.tid);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Origin",
+								"value": "https://app.1000.com",
+								"type": "text"
+							},
+							{
+								"key": "x-uid",
+								"value": "2616606",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJSMjEwMzU1MTQ4NTMwNzMiLCJpYXQiOjE1NDA4Njg1MTcsImRpZCI6IkEyNjE2NjA2IiwiZXhwIjoxNTQzNDYwNTE3fQ._qNS7hwCacC-SEDEcwurY4EFKQsuekxzY7OEVsKEiWA",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36",
+								"type": "text"
+							},
+							{
+								"key": "adminId",
+								"value": "A2616606",
+								"type": "text"
+							},
+							{
+								"key": "x-client-type",
+								"value": "a",
+								"type": "text"
+							},
+							{
+								"key": "x-href",
+								"value": "https://app.1000.com/#/d2c/order/start",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "*/*",
+								"type": "text"
+							},
+							{
+								"key": "Referer",
+								"value": "https://app.1000.com/",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "gzip, deflate, br",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"receiptId\":\"627550\",\"paymentType\":\"GRP\",\"shipType\":\"100028632\",\"hasInvoice\":0,\"offsetMoney\":0,\"presentInfoMap\":{},\"optId\":\"E862162\",\"optName\":\"18752005607\"}"
+						},
+						"url": {
+							"raw": "https://apid2c.qianmi.com/trade/saveV2",
+							"protocol": "https",
+							"host": [
+								"apid2c",
+								"qianmi",
+								"com"
+							],
+							"path": [
+								"trade",
+								"saveV2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
